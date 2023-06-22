@@ -1,0 +1,196 @@
+/* Global styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+  }
+  
+  /* Header styles */
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+  }
+  /* Add a fixed position to the header */
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #333;
+  color: #fff;
+  z-index: 300
+  ;
+}
+
+/* Adjust top margin of the content to avoid overlapping with the fixed header */
+body {
+  margin-top: 60px; /* Adjust the value according to the height of your header */
+}
+
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  nav ul li {
+    margin-right: 20px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  /* Home section styles */
+  #home {
+    height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("assets/images/background.gif");
+  background-size: cover;
+  background-position: center;
+  color: #000000;
+  text-align: center;
+  }
+  
+  .hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    background-color: #333333;
+    color: #fff;
+    padding: 20px;
+  }
+  
+  .hero h2 {
+    font-size: 1.5rem;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+  }
+  
+  /* About section styles */
+  #about {
+    background-color: #f9f9f9;
+    padding: 40px;
+  }
+  
+  .about-container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .about-container h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .about-container p {
+    font-size: 1.1rem;
+    line-height: 1.5;
+  }
+  
+  /* Projects section styles */
+  #projects {
+    padding: 40px;
+    text-align: center;
+  }
+  
+  .project {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+  }
+  
+  .project img {
+    width: 300px;
+    height: auto;
+    border-radius: 5px;
+    margin-right: 20px;
+  }
+  
+  .project-info {
+    text-align: left;
+  }
+  
+  .project-info h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .project-info p {
+    font-size: 1.1rem;
+    line-height: 1.5;
+  }
+  
+ /* Contact section styles */
+#contact {
+  background-color: #f9f9f9;
+  padding: 40px;
+}
+
+.contact-container {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.contact-container h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+input[type="submit"] {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #555;
+}
+
+textarea {
+  height: 120px;
+}
+
+@media (max-width: 600px) {
+  .contact-container {
+    padding: 0 20px;
+  }
+}
+
+  /* Footer styles */
+  footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+  }
+  
