@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>All the Animals</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
+      text-align: center;
+    }
+    
+    h1 {
+      color: #ff6347;
+      margin-top: 30px;
+    }
+    
+    h2 {
+      color: #808080;
+      margin-top: 40px;
+    }
+    
+    img {
+      width: 300px;
+      height: auto;
+      margin: 20px auto;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+    
+    button {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: #ff6347;
+      color: #ffffff;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    
+    button:hover {
+      background-color: #e50000;
+    }
+  </style>
+</head>
+<body>
+  <h1>All the Animals</h1>
+  
+  <h2>Rabbit:</h2>
+  <img src="../assets/images/rabbit.png" alt="rabbit" /> 
+  <p>
+    <button onclick="playAnimalSound('./sounds/rabbit_sound.mp3')">Play Rabbit Sound</button>
+  </p>
+  
+  <h2>Cat:</h2>
+  <img src="../assets/images/cat.png" alt="cat" />
+   <p>
+
+      <button onclick="playAnimalSound('./sounds/cat_sound.mp3')">Play Cat Sound</button>
+
+   </p>
+  <h2>Dog:</h2>
+  <img src="../assets/images/dog.png" alt="dog" />
+  <p>
+
+      <button onclick="playAnimalSound('./sounds/dog_sound.mp3')">Play Dog Sound</button>
+
+  </p>
+  
+  <h2>Fish:</h2>
+  <img src="../assets/images/fish.png" alt="fish" />
+
+  <p>
+    <button onclick="playAnimalSound('./sounds/fish_sound.mp3')">Play Fish Sound</button>
+
+
+  </p>
+  
+  <h2>Bird:</h2>
+  <img src="../assets/images/bird.png" alt="bird" />
+
+  <p>
+
+    <button onclick="playAnimalSound('./sounds/bird_sound.mp3')">Play Bird Sound</button>
+
+  </p>
+  
+  <script>
+    function playAnimalSound(sound) {
+      const audio = new Audio(sound);
+      audio.play();
+    }
+  </script>
+  
+ 
+</body>
+</html>
